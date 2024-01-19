@@ -3,20 +3,17 @@ package main
 import (
 	"adventofcode2024/solutions/day1"
 	"bufio"
-	"fmt"
 	"os"
 )
 
 func main() {
-	fmt.Println("Hello, world.")
-
-	input, err := readFileLines("input/day1/part1.txt")
+	input, err := readFileLines("input/day1/input.txt")
 	if err != nil {
 		println("Error opening input file: ", err.Error())
 		return
 	}
 
-	day1.Part1(input)
+	day1.Part2(input)
 }
 
 // Thanks https://stackoverflow.com/questions/5884154/read-text-file-into-string-array-and-write
